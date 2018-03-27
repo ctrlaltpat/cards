@@ -29,12 +29,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <StyledBoard d={this.state.deck} l={this.state.layout} />
         <button onClick={this.tlCorner}>Top Left</button>
         <button onClick={this.trCorner}>Top Right</button>
         <button onClick={this.default}>Default</button>
         <button onClick={this.blCorner}>Bottom Left</button>
         <button onClick={this.brCorner}>Bottom Right</button>
+        <StyledBoard d={this.state.deck} l={this.state.layout} />
       </div>
     );
   }
